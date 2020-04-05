@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import './reset.css';
 import './bootstrap.min.css';
 import './style.css';
@@ -15,19 +16,25 @@ import rateYourRoommateImg from "./images/rateyourroommate.png";
 
 function App() {
   return (
-    <div>
-        <Navbar/>
-        <About/>
-        <ProjectsSection
-            passwordGeneratorImg={passwordGeneratorImg}
-            weatherImg={weatherImg}
-            doubleMeaningDictionaryImg={doubleMeaningDictionaryImg}
-            burgerLoggerImg={burgerLoggerImg}
-            noteTakerImg={noteTakerImg}
-            rateYourRoommateImg={rateYourRoommateImg}
-        />
-        <ContactSection/>
-    </div>
+    <Router>
+        <Switch>
+            <Route exact path = "/">
+                <div>
+                    <Navbar/>
+                    <About/>
+                    <ProjectsSection
+                        passwordGeneratorImg={passwordGeneratorImg}
+                        weatherImg={weatherImg}
+                        doubleMeaningDictionaryImg={doubleMeaningDictionaryImg}
+                        burgerLoggerImg={burgerLoggerImg}
+                        noteTakerImg={noteTakerImg}
+                        rateYourRoommateImg={rateYourRoommateImg}
+                    />
+                    <ContactSection/>
+                </div>
+            </Route>
+        </Switch>
+    </Router>
   );
 }
 
