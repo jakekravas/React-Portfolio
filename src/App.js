@@ -16,25 +16,19 @@ import rateYourRoommateImg from "./images/rateyourroommate.png";
 
 function App() {
   return (
-    <Router>
-        <Switch>
-            <Route exact path = "/">
-                <div>
-                    <Navbar/>
-                    <About/>
-                    <ProjectsSection
-                        passwordGeneratorImg={passwordGeneratorImg}
-                        weatherImg={weatherImg}
-                        doubleMeaningDictionaryImg={doubleMeaningDictionaryImg}
-                        burgerLoggerImg={burgerLoggerImg}
-                        noteTakerImg={noteTakerImg}
-                        rateYourRoommateImg={rateYourRoommateImg}
-                    />
-                    <ContactSection/>
-                </div>
-            </Route>
-        </Switch>
-    </Router>
+    <div>
+        <Navbar/>
+        <About/>
+        <ProjectsSection
+            passwordGeneratorImg={passwordGeneratorImg}
+            weatherImg={weatherImg}
+            doubleMeaningDictionaryImg={doubleMeaningDictionaryImg}
+            burgerLoggerImg={burgerLoggerImg}
+            noteTakerImg={noteTakerImg}
+            rateYourRoommateImg={rateYourRoommateImg}
+        />
+        <ContactSection/>
+    </div>       
   );
 }
 

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jakekravas.github.io/React-Portfolio/",
-  "name": "react-assets",
+  "homepage": "https://jakekravas.github.io/react-portfolio/",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
