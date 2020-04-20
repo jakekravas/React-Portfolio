@@ -16,7 +16,7 @@ import rateYourRoommateImg from "./images/rateyourroommate.png";
 
 function App() {
   return (
-    <div>
+    <div className="app">
         <Navbar/>
         <About/>
         <ProjectsSection
